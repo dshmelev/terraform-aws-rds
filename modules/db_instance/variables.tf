@@ -178,6 +178,11 @@ variable "tags" {
   default     = {}
 }
 
+variable "prevent_destroy" {
+  description = "This flag provides extra protection against the destruction of a given resource. When this is set to true, any plan that includes a destroy of this resource will return an error message."
+  default     = false
+}
+
 variable "option_group_name" {
   description = "Name of the DB option group to associate."
   default     = ""

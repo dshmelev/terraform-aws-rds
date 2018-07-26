@@ -102,4 +102,6 @@ module "db_instance" {
   character_set_name = "${var.character_set_name}"
 
   tags = "${var.tags}"
+
+  prevent_destroy = "${var.prevent_destroy}"
 }
